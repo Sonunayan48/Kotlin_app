@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Kotlin App</string>
+    <string name="app_name">Tic Tac Toe</string>
     <string name="reset_board">Reset Board</string>
 </resources>
