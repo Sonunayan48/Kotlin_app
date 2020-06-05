@@ -64,7 +64,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\So
 	android:allowBackup
 		ADDED from C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:11:9-59
 activity#com.sonunayan48.android.kotlinapp.MainActivity
 ADDED from C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:12:9-18:20
 	android:name

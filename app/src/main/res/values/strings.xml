@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Kotlin App</string>
+    <string name="reset_board">Reset Board</string>
 </resources>

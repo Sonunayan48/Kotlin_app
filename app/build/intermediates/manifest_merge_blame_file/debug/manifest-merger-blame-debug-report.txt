@@ -27,8 +27,8 @@
 19        android:supportsRtl="true"
 19-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:10:9-35
 20        android:testOnly="true"
-21        android:theme="@style/AppTheme" >
-21-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:11:9-40
+21        android:theme="@style/Theme.AppCompat.NoActionBar" >
+21-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:11:9-59
 22        <activity android:name="com.sonunayan48.android.kotlinapp.MainActivity" >
 22-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:12:9-18:20
 22-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:12:19-47

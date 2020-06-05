@@ -28,6 +28,10 @@
         "source": "C:\\Users\\Sonu nayan\\AndroidStudioProjects\\Kotlin\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\Sonu nayan\\AndroidStudioProjects\\Kotlin\\app\\build\\intermediates\\res\\merged\\debug\\drawable_board_back.xml.flat",
+        "source": "C:\\Users\\Sonu nayan\\AndroidStudioProjects\\Kotlin\\app\\src\\main\\res\\drawable\\board_back.xml"
+    },
+    {
         "merged": "C:\\Users\\Sonu nayan\\AndroidStudioProjects\\Kotlin\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Sonu nayan\\AndroidStudioProjects\\Kotlin\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
@@ -54,6 +58,10 @@
     {
         "merged": "C:\\Users\\Sonu nayan\\AndroidStudioProjects\\Kotlin\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Sonu nayan\\AndroidStudioProjects\\Kotlin\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Sonu nayan\\AndroidStudioProjects\\Kotlin\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_back.xml.flat",
+        "source": "C:\\Users\\Sonu nayan\\AndroidStudioProjects\\Kotlin\\app\\src\\main\\res\\drawable\\btn_back.xml"
     },
     {
         "merged": "C:\\Users\\Sonu nayan\\AndroidStudioProjects\\Kotlin\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",

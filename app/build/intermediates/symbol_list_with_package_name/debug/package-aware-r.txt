@@ -653,6 +653,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable board_back
+drawable btn_back
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -810,6 +811,7 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id resetBtn
 id right
 id right_icon
 id right_side
@@ -951,6 +953,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string reset_board
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
