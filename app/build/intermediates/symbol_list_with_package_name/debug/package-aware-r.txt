@@ -426,6 +426,7 @@ color material_grey_850
 color material_grey_900
 color notification_action_color_filter
 color notification_icon_bg_color
+color play_board
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -651,6 +652,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable board_back
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -741,6 +743,15 @@ id barrier
 id beginning
 id blocking
 id bottom
+id box00
+id box01
+id box02
+id box10
+id box11
+id box12
+id box20
+id box21
+id box22
 id buttonPanel
 id center_vertical
 id chains
@@ -794,6 +805,7 @@ id on
 id packed
 id parent
 id parentPanel
+id parent_view
 id percent
 id progress_circular
 id progress_horizontal
@@ -1291,6 +1303,7 @@ style Widget_AppCompat_Toolbar
 style Widget_AppCompat_Toolbar_Button_Navigation
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
+style board_style
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
