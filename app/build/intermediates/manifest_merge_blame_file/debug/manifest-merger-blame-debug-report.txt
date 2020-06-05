@@ -11,7 +11,7 @@
 9-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:5:5-19:19
+11-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:5:5-21:19
 12        android:allowBackup="true"
 12-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,9 +29,9 @@
 20        android:testOnly="true"
 21        android:theme="@style/Theme.AppCompat.NoActionBar" >
 21-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:11:9-59
-22        <activity android:name="com.sonunayan48.android.kotlinapp.MainActivity" >
+22        <activity android:name="com.sonunayan48.android.kotlinapp.WelcomeActivity" >
 22-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:12:9-18:20
-22-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:12:19-47
+22-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:12:19-50
 23            <intent-filter>
 23-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:13:13-17:29
 24                <action android:name="android.intent.action.MAIN" />
@@ -43,6 +43,10 @@
 26-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:16:27-74
 27            </intent-filter>
 28        </activity>
-29    </application>
-30
-31</manifest>
+29        <activity android:name="com.sonunayan48.android.kotlinapp.MainActivity" >
+29-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:19:9-20:20
+29-->C:\Users\Sonu nayan\AndroidStudioProjects\Kotlin\app\src\main\AndroidManifest.xml:19:19-47
+30        </activity>
+31    </application>
+32
+33</manifest>

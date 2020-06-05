@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Tic Tac Toe</string>
     <string name="reset_board">Reset Board</string>
+    <string name="first_message">%1$s, First you go</string>
+    <string name="comm_mess">%1$s, next your chance</string>
+    <string name="player_x">PLAYER X:</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="player_o">PLAYER O:</string>
+    <string name="play_now">Play Now</string>
 </resources>

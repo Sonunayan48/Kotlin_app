@@ -1,6 +1,7 @@
 package com.sonunayan48.android.kotlinapp
 
 import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
@@ -12,9 +13,16 @@ class MainActivity : AppCompatActivity() {
     private var steps: Int = 0
     private val len = 3
     private lateinit var arr: Array<IntArray>
+    private val playerO: String = "playerO"
+    private val playerX: String = "playerX"
+    private var oName: String? = null
+    private var xName: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val openingIntent: Intent = this.intent
+        oName = openingIntent.getStringExtra(playerO)
+        xName = openingIntent.getStringExtra(playerX)
         arr = Array(len) { IntArray(len) }
         box00.setOnClickListener { performStep(it, 0, 0) }
         box01.setOnClickListener { performStep(it, 0, 1) }
@@ -26,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         box21.setOnClickListener { performStep(it, 2, 1) }
         box22.setOnClickListener { performStep(it, 2, 2) }
         resetBtn.setOnClickListener { recreate() }
+        message.text = getString(R.string.first_message, oName)
     }
 
     private fun performStep(v: View, row: Int, col: Int) {
@@ -35,14 +44,23 @@ class MainActivity : AppCompatActivity() {
                 0 -> {
                     view.text = "O"
                     arr[row][col] = 1
+                    message.text = getString(R.string.comm_mess, xName)
                 }
                 else -> {
                     view.text = "X"
                     arr[row][col] = 2
+                    message.text = getString(R.string.comm_mess, oName)
                 }
             }
             if (checkWin()) {
-                createGameOverDialog(0, view.text.toString())
+                message.visibility = View.INVISIBLE
+                createGameOverDialog(
+                    0,
+                    when (view.text.toString()) {
+                        "X" -> xName
+                        else -> oName
+                    }!!
+                )
                 return
             }
             steps++
@@ -94,7 +112,7 @@ class MainActivity : AppCompatActivity() {
         )
         builder.setMessage(
             when (i) {
-                0 -> "Player $a is the Winner, Congrats!!!"
+                0 -> "$a, You Won, Congrats!!!"
                 else -> "The game has been ended and no one won the game."
             }
         )
@@ -112,6 +130,8 @@ class MainActivity : AppCompatActivity() {
         }
         builder.setCancelable(false)
         val dialog: AlertDialog = builder.create()
-        dialog.show()
+        if (!dialog.isShowing) {
+            dialog.show()
+        }
     }
 }
