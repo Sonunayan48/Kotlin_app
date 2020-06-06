@@ -26,8 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.sonunayan48.android.kotlinapp.MainActivity" >
-        </activity>
+        <activity android:name="com.sonunayan48.android.kotlinapp.MainActivity" />
     </application>
 
 </manifest>

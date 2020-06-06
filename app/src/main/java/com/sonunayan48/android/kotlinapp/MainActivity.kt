@@ -122,6 +122,11 @@ class MainActivity : AppCompatActivity() {
             dialogInterface.cancel()
             recreate()
         }
+        builder.setNeutralButton(
+            "Change Players"
+        ) { dialog: DialogInterface?, which: Int ->
+            onBackPressed()
+        }
         builder.setNegativeButton(
             "Exit Game"
         ) { dialog: DialogInterface, _: Int ->
