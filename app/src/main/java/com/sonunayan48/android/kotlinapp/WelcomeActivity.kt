@@ -29,7 +29,7 @@ class WelcomeActivity : AppCompatActivity() {
            Using a new handler to make all the edittext fields, textviews and buttons VISIBLE after the
            icon animation finishes using the Handler class postDelayed() function.
          */
-        val handler: Handler = Handler()
+        val handler = Handler()
         handler.postDelayed(
             {
                 linearLayout.visibility = View.VISIBLE
@@ -48,7 +48,7 @@ class WelcomeActivity : AppCompatActivity() {
                 && player_X.text.toString().isNotEmpty()
             ) {
                 //creating an intent to start the games activity
-                val intent: Intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
 
                 //putting the names of both the players in the created intent using Intent class
                 // putExtra() function

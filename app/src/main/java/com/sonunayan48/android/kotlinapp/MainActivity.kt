@@ -2,6 +2,7 @@ package com.sonunayan48.android.kotlinapp
 
 import android.content.DialogInterface
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
@@ -100,6 +101,12 @@ class MainActivity : AppCompatActivity() {
                 //if the winning condition is achieved then the showing the winning dialog using the
                 //createGameOverDialog() function created below
                 message.visibility = View.INVISIBLE
+                //creating Mediaplayer object to play the winning sound
+                val winplayer = MediaPlayer.create(this, R.raw.win)
+                if (!winplayer.isPlaying) {
+                    winplayer?.start()
+                }
+                //showing the winning dialog box after a interval of 1 second
                 val handler = Handler()
                 handler.postDelayed(
                     {
@@ -121,13 +128,19 @@ class MainActivity : AppCompatActivity() {
         }
         //checking if the game has to be end as if the number of moves have been reached to 9
         if (moves == 9) {
+            //creating a mediaplayer object to play gameover sound
+            val gameoverPlayer = MediaPlayer.create(this, R.raw.gameover)
+            if (!gameoverPlayer.isPlaying) {
+                gameoverPlayer?.start()
+            }
             createGameOverDialog(1)
         }
     }
 
     /**
-     * This function basically checks whether the winning condition has reached or not. If the condition has
-     * been reached then it returns true, else it returns false
+     * This function basically checks whether the winning condition has reached or not
+     * If the condition has been reached then showing the respective winning line and then it
+     * returns true, else it returns false
      */
     private fun checkWin(): Boolean {
         //checking if the winning condition has been reached along any row
