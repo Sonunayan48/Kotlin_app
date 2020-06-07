@@ -3,6 +3,7 @@ package com.sonunayan48.android.kotlinapp
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
@@ -99,13 +100,19 @@ class MainActivity : AppCompatActivity() {
                 //if the winning condition is achieved then the showing the winning dialog using the
                 //createGameOverDialog() function created below
                 message.visibility = View.INVISIBLE
-                createGameOverDialog(
-                    0,
-                    //getting the winner name by getting the current move and using the when keyword
-                    when (view.text.toString()) {
-                        "X" -> xName
-                        else -> oName
-                    }!!
+                val handler = Handler()
+                handler.postDelayed(
+                    {
+                        createGameOverDialog(
+                            0,
+                            //getting the winner name by getting the current move and using the when keyword
+                            when (view.text.toString()) {
+                                "X" -> xName
+                                else -> oName
+                            }!!
+                        )
+                    },
+                    1000
                 )
                 return
             }
@@ -129,6 +136,11 @@ class MainActivity : AppCompatActivity() {
                 && arr[i][0] == arr[i][2]
                 && arr[i][0] != 0
             ) {
+                when (i) {
+                    0 -> r1.visibility = View.VISIBLE
+                    1 -> r2.visibility = View.VISIBLE
+                    else -> r3.visibility = View.VISIBLE
+                }
                 return true
             }
         }
@@ -138,6 +150,11 @@ class MainActivity : AppCompatActivity() {
                 && arr[0][i] == arr[2][i]
                 && arr[0][i] != 0
             ) {
+                when (i) {
+                    0 -> c1.visibility = View.VISIBLE
+                    1 -> c2.visibility = View.VISIBLE
+                    else -> c3.visibility = View.VISIBLE
+                }
                 return true
             }
         }
@@ -146,12 +163,14 @@ class MainActivity : AppCompatActivity() {
             && arr[0][0] == arr[2][2]
             && arr[0][0] != 0
         ) {
+            d1.visibility = View.VISIBLE
             return true
         }
         if (arr[0][2] == arr[1][1]
             && arr[0][2] == arr[2][0]
             && arr[0][2] != 0
         ) {
+            d2.visibility = View.VISIBLE
             return true
         }
         //if winning condition hasn't reached then finally returning false

@@ -20,4 +20,10 @@
         <item name="android:textSize">70sp</item>
     </style>
 
+    <!-- Style for winning lines -->
+    <style name="win_line">
+        <item name="android:background">@drawable/lin_back</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
 </resources>

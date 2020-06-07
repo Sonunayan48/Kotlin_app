@@ -666,6 +666,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable lin_back
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -756,6 +757,9 @@ id box20
 id box21
 id box22
 id buttonPanel
+id c1
+id c2
+id c3
 id center_vertical
 id chains
 id checkbox
@@ -766,6 +770,8 @@ id content
 id contentPanel
 id custom
 id customPanel
+id d1
+id d2
 id decor_content_parent
 id default_activity_button
 id dialog_button
@@ -817,6 +823,9 @@ id player_O
 id player_X
 id progress_circular
 id progress_horizontal
+id r1
+id r2
+id r3
 id radio
 id resetBtn
 id right
@@ -1324,6 +1333,7 @@ style Widget_AppCompat_Toolbar_Button_Navigation
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
 style board_style
+style win_line
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
