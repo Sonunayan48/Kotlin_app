@@ -15,6 +15,7 @@
         <item name="android:layout_rowWeight">1</item>
         <item name="android:background">@drawable/board_back</item>
         <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/droidsans_bold</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">70sp</item>
